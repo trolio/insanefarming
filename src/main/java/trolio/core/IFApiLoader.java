@@ -23,6 +23,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry.Impl;
 import scala.reflect.api.Trees.IfApi;
+import trolio.core.util.annotations.IFApiImplementation;
 
 public class IFApiLoader 
 {
