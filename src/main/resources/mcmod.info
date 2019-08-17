@@ -1,0 +1,16 @@
+[
+{
+  "modid": "insanefarming",
+  "name": "Insane Farming",
+  "description": "Core to the Insane Farming Modpack",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["trolio"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
