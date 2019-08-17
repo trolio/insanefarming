@@ -4,9 +4,11 @@ import io.netty.buffer.ByteBuf;
 import net.minecraft.client.network.NetHandlerPlayClient;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.network.NetHandlerPlayServer;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import trolio.core.helpers.MCClientHelper;
 
 public abstract class PenguinPacket implements IMessage
 {
@@ -31,9 +33,9 @@ public abstract class PenguinPacket implements IMessage
 	
 	public void handleQueuedServer (NetHandlerPlayServer serverHandler)
 	{
-		if (!handleServerPacket (serverHandler.playerEntity))
+		if (!handleServerPacket (serverHandler.player))
 		{
-			handlePacket(serverHandler.playerEntity);
+			handlePacket(serverHandler.player);
 		}
 	}
 }

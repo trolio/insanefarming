@@ -17,7 +17,7 @@ public class PacketHandler
 		registerPacket(clazz, Side.SERVER);
 	}
 	
-	public static registerPacket (Class clazz, Side side)
+	public static void registerPacket (Class clazz, Side side)
 	{
 		INSTANCE.registerPacket(clazz, side);
 	}
@@ -37,12 +37,12 @@ public class PacketHandler
 		INSTANCE.sendToEveryone (msg);
 	}
 	
-	public static sendToDimension (int dimension, IMessage msg)
+	public static void sendToDimension (int dimension, IMessage msg)
 	{
 		INSTANCE.sendToDimension (dimension, msg);
 	}
 	
-	public static sendToAllAround (IMessage packet, int dim, double x, double y, double z, int distance)
+	public static void sendToAllAround (IMessage packet, int dim, double x, double y, double z, int distance)
 	{
 		INSTANCE.sendToAllAround (packet, dim, x, y, z, distance);
 	}

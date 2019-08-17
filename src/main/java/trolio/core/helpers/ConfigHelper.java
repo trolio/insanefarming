@@ -7,6 +7,11 @@ public class ConfigHelper
 	private static Configuration config;
 	private static String category = "General";
 	
+	public static Configuration getConfig()
+	{
+		return config;
+	}
+	
 	public static void setConfig (Configuration config)
 	{
 		ConfigHelper.config = config;
