@@ -25,6 +25,7 @@ import net.minecraftforge.registries.IForgeRegistryEntry.Impl;
 import scala.reflect.api.Trees.IfApi;
 import trolio.api.IFApi;
 import trolio.core.util.annotations.IFApiImplementation;
+import trolio.quests.IFQuest;
 
 public class IFApiLoader 
 {
@@ -84,7 +85,7 @@ public class IFApiLoader
 	
 	private static void registerQuests (@Nonnull ASMDataTable asm)
 	{
-		String annotationClassName = IFQuests.class.getCanonicalName();
+		String annotationClassName = IFQuest.class.getCanonicalName();
 		Set<ASMData> asmDatas = new HashSet<>(asm.getAll(annotationClassName));
 		
 		for (ASMDataTable.ASMData asmData : asmDatas)
